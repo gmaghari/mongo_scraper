@@ -7,6 +7,7 @@ function showModal() {
   };
   $(document).on("click", ".modalClose", closeModal);
 };
+
 $(document).on("click", ".comment-button", showModal);
 
 $(document).on("click", "#savecomment", function() {

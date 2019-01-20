@@ -27,7 +27,7 @@ mongoose.connect(MONGODB_URI, {
 });
 
 app.get("/scrape", function(req, res) {
-  axios.get("https://www.nytimes.com/").then(function(response) {
+  axios.get("https://www.latimes.com/").then(function(response) {
     var $ = cheerio.load(response.data);
     $("article.story").each(function(i, element) {
       var result = {};
